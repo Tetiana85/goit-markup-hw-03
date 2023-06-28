@@ -1,0 +1,190 @@
+:root{
+    --btn-and-logo: #4D5AE5;
+    --hover-focus-color: #404BBF;
+    --bg-color: #FFFFFF;
+    --bg-color-team-footer: #F4F4FD;
+    --titles-color: #2E2F42;
+    --main-color: #434455;
+    /* --btn-border-color: #E7E9FC; */
+}
+
+
+button{
+    font: inherit;
+    cursor: pointer;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    
+}
+
+
+/* -------HEADER----- */
+.logo{
+    line-height: 1.17;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    color: var(--btn-and-logo);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover, .link:focus{
+    color: var(--hover-focus-color);
+}
+
+.span{
+    color: var(--titles-color);
+}
+
+.span:hover, .span:focus{
+    color: var(--hover-focus-color)
+}
+
+.list{
+    list-style: none;
+    text-decoration: none;
+    color: var(--titles-color);
+    font-style: normal;
+    font-weight: 500;
+}
+.list:hover, .list:focus{
+    color: var(--hover-focus-color);
+
+}
+.li-items{
+    color: var(--titles-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address{
+    font-style: normal;
+}
+.address-link{
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/* -----------SOLUTIONS------------- */
+
+.solutions{
+    background-color: var(--titles-color);
+}
+.solutions-title{
+    color: var(--bg-color);
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 1.07;
+    text-align: center;
+    
+}
+
+.li-title{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: var(--titles-color);
+}
+
+.li-par{
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    font-weight: 400;
+}
+
+.button-order{
+    color: var(--bg-color);
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    line-height: 1.5;
+    background-color: var(--btn-and-logo);
+}
+
+
+.button-order:hover{
+    background-color: var(--hover-focus-color); 
+
+}
+
+.button-order:focus{
+    background-color: var(--hover-focus-color); 
+
+}
+
+
+
+/* ------DOING------- */
+
+
+.title{
+    color: var(--titles-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* --------TEAM--------- */
+
+.team{
+    background-color: var(--bg-color-team-footer);
+}
+
+.team-items{
+    background-color: var(--bg-color);
+}
+
+/* -------FOOTER-------- */
+
+.footer{
+    background-color: var(--titles-color);
+    color: var(--bg-color-team-footer);
+}
+
+.footer-span{
+    color: var(--bg-color-team-footer);
+}
+
+.footer-text{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/* --------FILTER--------- */
+
+.button-filter{
+    color: var(--btn-and-logo);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    /* border: 1px solid var(--btn-border-color); */
+    background-color: var(--bg-color-team-footer);
+   
+}
+
+.button-filter:hover, .button-filter:focus{
+    color: var(--bg-color);
+    background: var(--hover-focus-color);
+}
