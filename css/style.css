@@ -79,10 +79,13 @@ body{
 
 /* -------HEADER----- */
 .header{
-    display: flex;
     border-bottom: 1px solid var(--btn-border-color);
-    justify-content: space-between;
     padding: 24px 0;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav{
@@ -277,7 +280,7 @@ body{
     margin-right: 24px;
 }
 
-.team-text{
+.card-text{
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -304,18 +307,44 @@ body{
 
 /* --------FILTER--------- */
 
+.products{
+    padding: 96px 0 120px;
+}
+
+
 .button-filter{
     color: var(--btn-and-logo);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    /* border: 1px solid var(--btn-border-color); */
+    border-radius: 4px;
+    border: 1px solid var(--btn-border-color);
     background-color: var(--bg-color-team-footer);
+    padding: 12px 24px;
    
+}
+
+.button-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.button-ul>li:not(:last-child) {
+    margin-right: 24px;
 }
 
 .button-filter:hover, .button-filter:focus{
     color: var(--bg-color);
     background: var(--hover-focus-color);
+}
+.filter-btn{
+    margin-bottom: 72px;
+}
+.products-cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    width: calc((100%-48px)/3);
 }
