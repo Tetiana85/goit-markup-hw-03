@@ -348,3 +348,7 @@ body{
     row-gap: 48px;
     width: calc((100%-48px)/3);
 }
+.frame{
+    border: 1px solid var(--btn-border-color);
+    border-top: hidden;
+}
