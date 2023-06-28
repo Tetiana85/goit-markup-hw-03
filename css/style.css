@@ -52,25 +52,43 @@ a:not([class]) {
     --bg-color-team-footer: #F4F4FD;
     --titles-color: #2E2F42;
     --main-color: #434455;
-    /* --btn-border-color: #E7E9FC; */
+    --btn-border-color: #E7E9FC;
 }
 
 
-button{
-    font: inherit;
-    cursor: pointer;
-}
+
 
 
 body{
     font-family: "Roboto", sans-serif;
     color: var(--main-color);
-    background-color: var(--bg-color);
-    
+    background-color: var(--bg-color); 
+}
+.section{
+    padding: 120px 0 120px;
+
 }
 
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* -------HEADER----- */
+.header{
+    display: flex;
+    border-bottom: 1px solid var(--btn-border-color);
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.nav{
+    display: flex;
+}
+
 .logo{
     line-height: 1.17;
     font-family: Raleway, sans-serif;
@@ -79,6 +97,7 @@ body{
     letter-spacing: 0.54px;
     text-transform: uppercase;
     color: var(--btn-and-logo);
+    margin-right: 76px;
 }
 
 .link{
@@ -103,34 +122,45 @@ body{
     color: var(--titles-color);
     font-style: normal;
     font-weight: 500;
+    display: flex;
 }
 .list:hover, .list:focus{
     color: var(--hover-focus-color);
 
 }
+
 .li-items{
     color: var(--titles-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 .address{
     font-style: normal;
+
 }
 .address-link{
     color: var(--main-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 40px;
 }
+
 
 
 /* -----------SOLUTIONS------------- */
 
 .solutions{
+    display: flex;
+    flex-direction: column;
     background-color: var(--titles-color);
+    max-width: 100%;
+    padding: 188px 0 188px;
+    align-items: center;
 }
 .solutions-title{
     color: var(--bg-color);
@@ -138,7 +168,7 @@ body{
     letter-spacing: 0.02em;
     line-height: 1.07;
     text-align: center;
-    
+    width: 496px;
 }
 
 .li-title{
@@ -147,6 +177,7 @@ body{
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: var(--titles-color);
+
 }
 
 .li-par{
@@ -155,6 +186,8 @@ body{
     line-height: 1.5;
     letter-spacing: 0.32px;
     font-weight: 400;
+    width: 264px;
+    margin: 8px 0 0;
 }
 
 .button-order{
@@ -163,6 +196,11 @@ body{
     letter-spacing: 0.64px;
     line-height: 1.5;
     background-color: var(--btn-and-logo);
+    margin-top: 48px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -176,10 +214,36 @@ body{
 
 }
 
+/* -----ITEMS--------- */
+.items{
+    padding-bottom: 0;
+}
+
+.items-ul>li:not(:last-child){
+    margin-right: 24px;
+}
+
+
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 /* ------DOING------- */
 
+.doing{
+    padding-bottom: 120px;
+}
 
 .title{
     color: var(--titles-color);
@@ -189,16 +253,33 @@ body{
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
+
+.doing-ul>li:not(:last-child){
+    margin-right: 24px;
+}
+
 
 /* --------TEAM--------- */
 
 .team{
     background-color: var(--bg-color-team-footer);
+    padding-bottom: 120px;
 }
 
 .team-items{
     background-color: var(--bg-color);
+    text-align: center;
+}
+
+.team-ul>li:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team-text{
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 /* -------FOOTER-------- */
@@ -206,6 +287,7 @@ body{
 .footer{
     background-color: var(--titles-color);
     color: var(--bg-color-team-footer);
+    padding: 101px 0;
 }
 
 .footer-span{
@@ -215,6 +297,8 @@ body{
 .footer-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 18px;
 }
 
 
