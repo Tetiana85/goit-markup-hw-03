@@ -360,10 +360,7 @@ body{
 }
 
 .cards-item{
-    width: calc((100%-48px)/3);
-}
-.cards-item-ul>li:not(:last-child) {
-    margin-right: 24px;
+    width: calc((100% - 48px) / 3);
 }
 
 .frame{
