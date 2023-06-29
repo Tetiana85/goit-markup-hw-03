@@ -234,7 +234,6 @@ body{
 .items-section-list{
     width: calc((100% - 72px) / 4);
 }
-
 .items-ul>li:not(:last-child){
     margin-right: 24px;
 }
@@ -272,7 +271,6 @@ body{
 .doing-li {
     width: calc((100% - 48px) / 3);
 }
-
 .doing-ul>li:not(:last-child){
     margin-right: 24px;
 }
@@ -364,7 +362,7 @@ body{
 }
 
 .cards-item{
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3);
 }
 
 .frame{
